@@ -41,7 +41,6 @@ namespace GeorgeDawes.Models {
         public string Name { get; set; }
         public int StartingValue { get; set; }
         public int Multiplier { get; set; }
-        //public virtual VictoryCondition VictoryCondition { get; set; }
         public virtual Player Player { get; set; }
     }
     public class CounterSpec {
@@ -50,23 +49,5 @@ namespace GeorgeDawes.Models {
         public string Name { get; set; }
         public int StartingValue { get; set; }
         public int Multiplier { get; set; }
-        // public virtual VictoryCondition VictoryCondition { get; set; }
     }
-
-    //public abstract class VictoryCondition {
-    //    public abstract bool Victory(int score);
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //    public virtual CounterSpec CounterSpec { get; set; }
-    //}
-
-    //public class PointThreshholdVictory : VictoryCondition
-    //{
-    //    public int Threshold { get; set; }
-
-    //    public override bool Victory()
-    //    {
-    //        return true;
-    //    }
-    //}
 }
